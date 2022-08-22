@@ -1,14 +1,19 @@
 #include <stdio.h>
 
-int main(void)
+
+void sortItem(int x, int y, int z)
 {
-    printf("my c programme is running \n");
-    return 0;
+    int numbersInOrder[3];
+    numbersInOrder[0] = x, numbersInOrder[1] = y, numbersInOrder[2] = z;
+    for(int i = 0; i >= 0; i++) {
+        if(numbersInOrder[0] == i){
+            printf("hey");
+        }else {}
+    }
+    printf("\n");
 }
 
-int sortItem(x,y,z)
+void main(void)
 {
-    int checkerPoint = 0;
-    int numbersInOrder[3];
-    while (true)
+    sortItem(2,5,1);
 }
