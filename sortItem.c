@@ -3,17 +3,32 @@
 
 void sortItem(int x, int y, int z)
 {
-    int numbersInOrder[3];
-    numbersInOrder[0] = x, numbersInOrder[1] = y, numbersInOrder[2] = z;
-    for(int i = 0; i >= 0; i++) {
-        if(numbersInOrder[0] == i){
-            printf("hey");
-        }else {}
+    if(x > y) {
+        if(x < z){
+            printf("%d, %d, %d", y, x, z);
+        }else{
+            if(z>y){
+                printf("%d, %d, %d", y, z, x);
+            }else{
+                printf("%d, %d, %d", z, y, x);
+            }
+        }
+    }else{
+        if(y<z){
+            printf("%d, %d, %d", x,y,z);
+        }
+        else{
+            if(x > z){
+                printf("%d, %d, %d", z, x, y);
+            }else {
+                printf("%d, %d, %d", x, z, y);
+            }
+        }
     }
     printf("\n");
 }
 
 void main(void)
 {
-    sortItem(2,5,1);
+    sortItem(5,5,1);
 }
