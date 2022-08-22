@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void main(void)
 {
-    int sum = 0;
-    int num;
-    printf("please enter a number");
-    while((num = getc( stdin )) > 0){
-        sum += num;
-        printf("%d", num);
+    int n;
+    scanf("%d", &n);
+    int sum = 3;
+    int zero = 0;
+    while(n > zero){
+        sum += n;
     }
-    // printf("%d", sum);
 
+    printf("%d\n", sum);
 }
