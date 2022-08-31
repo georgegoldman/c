@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1661951683 source:/home/onyedikachi/backend/c/console_app/main.c
+	<stdio.h>
+	<stdlib.h>
+
