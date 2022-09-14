@@ -25,5 +25,6 @@ int main(int argc, char const *argv[])
         strcat(message, "learning C");
 
         puts(message);
+        printf("this is the size --> %d \n this is the length --> %d \n", sizeof(message), strlen(message));
         return 0;
 }
