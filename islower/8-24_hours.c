@@ -8,21 +8,22 @@
 
 void jack_bauer(void)
 {
-        int min = 0, hr = 0, count = 0;
-        while (count <= 1440)
+        int min = 0, hr = 0, hr_rm = 0, min_rm = 0;
+        while (hr <= 23)
         {
-                if (min == 37)
-                        break;
-                if ((count % 60) == 0)
+                while (min <= 59 )
                 {
-                        min = 0;
-                        hr++;
-                        count++;
-                        continue;
+                        min_rm = min % 10;
+                        hr_rm = hr % 10;
+                        _putchar(hr/10 + '0');
+                        _putchar(hr_rm + '0');
+                        _putchar(':');
+                        _putchar(min / 10 + '0');
+                        _putchar(min_rm + '0');
+                        min++;
+                        _putchar('\n');
                 }
-                count++;
-                min += 1;
-                printf("%3d \n", min);
-        // printf("%d:%d \n", hr, min);
+                hr++;
+                min = 0;
         }
 }

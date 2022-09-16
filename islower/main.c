@@ -4,6 +4,7 @@
 
 int main()
 {
-        jack_bauer();
+        time_algorithm();
+        // jack_bauer();
         return (0);
 }
