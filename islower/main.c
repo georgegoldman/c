@@ -4,7 +4,6 @@
 
 int main()
 {
-        time_algorithm();
-        // jack_bauer();
+        pointer_array_string_quize();
         return (0);
 }
